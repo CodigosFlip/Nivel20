@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error de Sistema</title>
+    <style>
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px red, -2px -2px blue;
+                transform: translate(0);
+            }
+            20% {
+                text-shadow: -2px -2px red, 2px 2px blue;
+                transform: translate(-3px, 3px);
+            }
+            40% {
+                text-shadow: 2px -2px red, -2px 2px blue;
+                transform: translate(3px, -3px);
+            }
+            60% {
+                text-shadow: -2px 2px red, 2px -2px blue;
+                transform: translate(-3px, -3px);
+            }
+            80% {
+                text-shadow: 2px 2px red, -2px -2px blue;
+                transform: translate(3px, 3px);
+            }
+            100% {
+                text-shadow: -2px -2px red, 2px 2px blue;
+                transform: translate(0);
+            }
+        }
+
+        .error-text {
+            font-family: 'Courier New', Courier, monospace; /* Fuente de sistema */
+            color: red;
+            font-size: 2em;
+            animation: glitch 1s infinite; /* Efecto de "glitch" */
+        }
+    </style>
+</head>
+<body>
+    <div class="error-text">
+        ERROR, SERVIR, ERROR COMANDO SERVIR
+    </div>
+</body>
+</html>
